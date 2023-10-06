@@ -4,62 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
-    <style>
-        /* Додайте ваші стилі CSS тут */
-    </style>
 </head>
 <body>
     <header>
+        <a href="#">WebStudio</a>
         <nav>
-            <ul>
-                <li><a href="#">WebStudio</a></li>
+            <ul>    
                 <li><a href="#">Студія</a></li>
                 <li><a href="#">Портфоліо</a></li>
                 <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
-        <address>
-            <p>info@devstudio.com</p>
-            <p>+38 096 111 11 11</p>
-        </address>
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a href="tel:+380961111111">+38 096 111 11 11</a>
     </header>
     
     <main>
-        <h1>Студія</h1>
-        <section id="intro">
-            <p>Ефективні рішення для вашого бізнесу</p>
+        <section class="intro">
+            <h1>Ефективні рішення для вашого бізнесу</h1>
             <button type="button">Замовити послугу</button>
         </section>
         
-        <section id="services">
-            <h2>УВАГА ДО ДЕТАЛЕЙ</h2>
-            <h2>ПУНКТУАЛЬНІСТЬ</h2>
-            <h2>ПЛАНУВАННЯ</h2>
-            <h2>СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+        <section class="services">
+            <ul>
+                <li>
+                    <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                </li>
+                <li>
+                    <h3>ПУНКТУАЛЬНІСТЬ</h3>
+                    <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                </li>
+                <li>
+                    <h3>ПЛАНУВАННЯ</h3>
+                    <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+                </li>
+                <li>
+                    <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                </li>
+            </ul>
         </section>
         
-        <section id="about">
+        <section class="about__us">
             <h2>Чим ми займаємося</h2>
-            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-            <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="images/desktop.jpg" alt="desktop" width="370" height="294">
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/phone.jpg" alt="phone" width="370" height="294">
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/design.jpg" alt="design" width="370" height="294">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="our__team">
+        <h2>Наша команда</h2>
+            <div class="card">
+                <img src="images/member1.jpg" alt="member1" width="270" height="260">
+            <h3>Ігор Дем'яненко</h3>
+            <p>Product Designer</p>
+            </div>
+            <div class="card">
+                <img src="images/member2.jpg" alt="member2" width="270" height="260">
+                <h3>Ольга Рєпіна</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="card">-
+                <img src="images/member3.jpg" alt="member3" width="270" height="260">
+                <h3>Микола Тарасов</h3>
+                <p>Marketing</p>
+            </div>
+            <div class="card">
+                <img src="images/member4.jpg" alt="member4" width="270" height="260">
+                <h3>Михайло Єрмаков</h3>
+                <p>UI Designer</p>
+            </div>
         </section>
     </main>
     
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">WebStudio</a></li>
-                <li><a href="#">Студія</a></li>
-                <li><a href="#">Портфоліо</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
+    <footer> 
+        <a href="#">WebStudio</a>
         <address>
-            <p>info@devstudio.com</p>
-            <p>+38 096 111 11 11</p>
-        </address>
+            <a href="https://www.google.com/maps?q=м. Київ, пр-т Лесі Українки, 26" target="_blank">м. Київ, пр-т Лесі Українки, 26 (карта)</a>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+        </address>        
     </footer>
 </body>
 </html>

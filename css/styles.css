@@ -18,8 +18,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #757575;
 }
+
+a:hover {
+    color: #2196F3;
+  }
 
 .container {
     max-width: 1200px;
@@ -27,6 +31,8 @@ a {
     padding-right: 15px;
     margin: 0 auto;
 }
+
+
 
 .logo {
     width: 145px;
@@ -143,7 +149,7 @@ a {
 
 }
 
-.servsces__text {
+.services__text {
     color: #757575;
     font-family: Roboto;
     font-size: 14px;
@@ -151,4 +157,7 @@ a {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+}
+.title{
+    text-align: center;
 }

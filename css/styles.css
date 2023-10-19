@@ -12,20 +12,8 @@
   --accent-btn-color: #188ce8;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000;
-  font-weight: 400;
-}
-
 body {
-  font-family: 'Roboto', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -37,7 +25,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #757575;
+  color: #212121;
   transition-duration: 0.5s;
 }
 
@@ -55,9 +43,7 @@ a:hover {
 .title {
   color: #212121;
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
@@ -86,16 +72,23 @@ a:hover {
 
 .email {
   width: 135px;
+  color: #757575;
 }
 
 .phone {
   width: 122px;
+  color: #757575;
 }
 
 .list {
   display: flex;
   padding-top: 50px;
 
+}
+
+a.active {
+  background-color: transparent;
+  box-shadow: 0 2px 0 #2196F3;
 }
 
 
@@ -116,6 +109,12 @@ a:hover {
 
 }
 
+.header-contact {
+  display: flex;
+  gap: 40px;
+  font-weight: 500;
+}
+
 .nav__menu-list {
   width: 281px;
   display: flex;
@@ -125,17 +124,9 @@ a:hover {
 
 .nav__menu-link {
   color: #212121;
-  font-family: Roboto;
-  font-size: 14px;
   font-weight: 500;
 }
 
-.header-contact {
-  display: flex;
-  gap: 40px;
-  font-size: 14px;
-  font-weight: 500; 
-}
 
 
 
@@ -158,9 +149,7 @@ a:hover {
 .intro__title {
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
   font-size: 44px;
-  font-style: normal;
   font-weight: 900;
   line-height: 136%;
   letter-spacing: 2.64px;
@@ -174,7 +163,6 @@ a:hover {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -206,9 +194,6 @@ a:hover {
 
 .services__title-text {
   color: #212121;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
@@ -268,7 +253,6 @@ a:hover {
 
 .card-position {
   color: #757575;
-  font-weight: 400;
   padding-bottom: 30px;
 }
 
@@ -320,7 +304,6 @@ a:hover {
 .btn-filter {
   display: inline-block;
   padding: 6px 22px;
-  font-family: Roboto;
   border-style: none;
   border-radius: 4px;
   font-weight: 500;
@@ -360,9 +343,7 @@ a:hover {
 .portfolio-title {
   padding-bottom: 4px;
   color: #212121;
-  font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 200%;
   letter-spacing: 1.08px;
@@ -370,10 +351,7 @@ a:hover {
 
 .portfolio-post {
   color: #757575;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.48px;
 }
@@ -381,7 +359,6 @@ a:hover {
 .google-maps {
   color: #FFF;
   font-style: normal;
-
 }
 
 .contacts {

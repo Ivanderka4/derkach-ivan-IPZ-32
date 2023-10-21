@@ -40,6 +40,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.section{
+  padding: 94px 0;
+}
+
 .title {
   color: #212121;
   text-align: center;
@@ -49,13 +53,15 @@ a:hover {
   letter-spacing: 1.08px;
 }
 
-.logo {
+.header__logo {
+  padding: 24px 0;
+  padding-right: 93px;
+}
+.logo{
   width: 145px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   position: relative;
-  padding: 24px 0;
-  padding-right: 93px;
 }
 
 .blue-text {
@@ -213,10 +219,6 @@ a.active {
 
 
 
-.about__us {
-  margin: 94px 0;
-}
-
 .about__us-list {
   gap: 30px;
 }
@@ -228,7 +230,6 @@ a.active {
 
 
 .our__team {
-  padding: 94px 0;
   background-color: #F5F4FA;
 }
 
@@ -240,21 +241,23 @@ a.active {
   background-color: #fff;
   text-align: center;
   font-size: 16px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .card-img {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .card-name {
   color: #212121;
   font-weight: 500;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .card-position {
   color: #757575;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 
@@ -268,11 +271,11 @@ a.active {
 
 .logo-footer {
   padding-top: 60px;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .contact--item {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contact--item:last-child {
@@ -286,9 +289,6 @@ a.active {
 
 
 
-.portfolio {
-  padding: 94px 0;
-}
 
 .header {
   border-bottom: 1px solid #ECECEC;

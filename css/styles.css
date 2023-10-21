@@ -51,7 +51,7 @@ a:hover {
 
 .logo {
   width: 145px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   position: relative;
   padding: 24px 0;

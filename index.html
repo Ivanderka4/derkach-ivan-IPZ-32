@@ -10,17 +10,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script defer src="activePage.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="activePage.js"></script>
     <title>Студія</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container header__inner">
-            <div class="header__logo logo">
+            <a class="header__logo logo" href="/index.html" lang="en">
                 <span class="blue-text">Web</span><span class="black-text">Studio</span>
-            </div>
+            </a>
             <nav class=nav__menu>
                 <ul class=nav__menu-list>
                     <li class=nav__menu-link>
@@ -139,19 +141,22 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="logo logo-footer">
-                <span class="blue-text">Web</span><span class="white-text">Studio</span>
+            <div class="footer__logo">
+                <a class="logo" href="/index.html" lang="en">
+                    <span class="blue-text">Web</span><span class="white-text">Studio</span>
+                </a>
             </div>
             <address>
                 <ul class="footer-contact">
                     <li class="contact--item">
-                        <a class="google-maps" href="https://www.google.com/maps?q=м. Київ, пр-т Лесі Українки, 26" 
-                        target="_blank" rel="nofollow" referrerpolicy="no-referrer">м. Київ, пр-т Лесі Українки, 26</a>
+                        <a class="google-maps" href="https://www.google.com/maps?q=м. Київ, пр-т Лесі Українки, 26"
+                            target="_blank" rel="nofollow" referrerpolicy="no-referrer">м. Київ, пр-т Лесі Українки,
+                            26</a>
                     </li>
                     <li class="contact--item">
                         <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="contact--item">
+                    <li>
                         <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>

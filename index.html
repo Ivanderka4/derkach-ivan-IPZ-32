@@ -10,17 +10,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script defer src="activePage.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="activePage.js"></script>
     <title>Студія</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container header__inner">
-            <div class="logo">
+            <a class="header__logo logo" href="/index.html" lang="en">
                 <span class="blue-text">Web</span><span class="black-text">Studio</span>
-            </div>
+            </a>
             <nav class=nav__menu>
                 <ul class=nav__menu-list>
                     <li class=nav__menu-link>
@@ -51,7 +53,7 @@
             <button class="intro__btn" type="button">Замовити послугу</button>
         </section>
 
-        <section class="services section">
+        <section class="services">
             <div class="container">
                 <ul class="services__list">
                     <li class="services__list-link">
@@ -77,56 +79,56 @@
             </div>
         </section>
 
-        <section class="about__us section">
+        <section class="about__us">
             <div class="container">
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="about__us-list list">
                     <li>
-                        <div class="card">
-                            <img src="images/desktop.jpg" alt="desktop" width="370">
+                        <div>
+                            <img src="images/desktop.jpg" alt="desktop">
                         </div>
                     </li>
                     <li>
-                        <div class="card">
-                            <img src="images/phone.jpg" alt="phone" width="370">
+                        <div>
+                            <img src="images/phone.jpg" alt="phone">
                         </div>
                     </li>
                     <li>
-                        <div class="card">
-                            <img src="images/design.jpg" alt="design" width="370">
+                        <div>
+                            <img src="images/design.jpg" alt="design">
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="our__team section">
+        <section class="our__team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="our__team-list list">
                     <li class="card">
-                        <img class="card-img" src="images/member1.jpg" width="270" alt="Ігор Дем'яненко photo">
+                        <img class="card-img" src="images/member1.jpg" alt="Ігор Дем'яненко photo">
                         <div class="card-body">
                             <h3 class="card-name">Ігор Дем'яненко</h3>
                             <p class="card-position">Product Designer</p>
                         </div>
                     </li>
                     <li class="card">
-                        <img class="card-img" src="images/member2.jpg" width="270" alt="Михайло Єрмаков photo">
+                        <img class="card-img" src="images/member2.jpg" alt="Михайло Єрмаков photo">
                         <div class="card-body">
                             <h3 class="card-name">Ольга Рєпіна</h3>
                             <p class="card-position">UI Designer</p>
                         </div>
                     </li>
                     <li class="card">
-                        <img class="card-img" src="images/member3.jpg" width="270" alt="Микола Тарасов photo">
+                        <img class="card-img" src="images/member3.jpg" alt="Микола Тарасов photo">
                         <div class="card-body">
                             <h3 class="card-name">Микола Тарасов</h3>
                             <p class="card-position">Marketing</p>
                         </div>
                     </li>
                     <li class="card">
-                        <img class="card-img" src="images/member4.jpg" width="270" alt="Ольга Рєпіна photo">
+                        <img class="card-img" src="images/member4.jpg" alt="Ольга Рєпіна photo">
                         <div class="card-body">
                             <h3 class="card-name">Михайло Єрмаков</h3>
                             <p class="card-position">Frontend Developer</p>
@@ -139,14 +141,17 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="logo logo-footer">
-                <span class="blue-text">Web</span><span class="white-text">Studio</span>
+            <div class="footer__logo">
+                <a class="logo" href="/index.html" lang="en">
+                    <span class="blue-text">Web</span><span class="white-text">Studio</span>
+                </a>
             </div>
             <address>
                 <ul class="footer-contact">
                     <li class="contact--item">
-                        <a class="google-maps" href="https://www.google.com/maps?q=м. Київ, пр-т Лесі Українки, 26" 
-                        target="_blank" rel="nofollow" referrerpolicy="no-referrer">м. Київ, пр-т Лесі Українки, 26</a>
+                        <a class="google-maps" href="https://www.google.com/maps?q=м. Київ, пр-т Лесі Українки, 26"
+                            target="_blank" rel="nofollow" referrerpolicy="no-referrer">м. Київ, пр-т Лесі Українки,
+                            26</a>
                     </li>
                     <li class="contact--item">
                         <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>

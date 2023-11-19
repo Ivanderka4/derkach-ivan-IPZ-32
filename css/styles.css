@@ -1,3 +1,4 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
 :root {
   --white-color: #ffffff;
   --dark-color: #000000;
@@ -10,6 +11,12 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --accent-btn-color: #188ce8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -35,10 +42,13 @@ a:hover {
 
 .container {
   max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
 
 .title {
   color: #212121;
@@ -49,13 +59,15 @@ a:hover {
   letter-spacing: 1.08px;
 }
 
+.header__logo {
+  margin: 24px 0;
+  margin-right: 93px;
+}
+
 .logo {
-  width: 145px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   position: relative;
-  padding: 24px 0;
-  padding-right: 93px;
 }
 
 .blue-text {
@@ -71,24 +83,22 @@ a:hover {
 }
 
 .email {
-  width: 135px;
   color: #757575;
 }
 
 .phone {
-  width: 122px;
   color: #757575;
 }
 
 .list {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
 
 }
 
 a.active {
   background-color: transparent;
-  box-shadow: 0 2px 0 #2196F3;
+  color: #2196F3;
 }
 
 
@@ -113,18 +123,15 @@ a.active {
   display: flex;
   gap: 40px;
   font-weight: 500;
+  margin-left: auto;
 }
 
 .nav__menu-list {
-  width: 281px;
   display: flex;
-  gap: 50px;
-  padding-right: 354px;
-}
-
-.nav__menu-link {
   color: #212121;
   font-weight: 500;
+  gap: 50px;
+  margin-right: auto;
 }
 
 
@@ -133,18 +140,15 @@ a.active {
 
 
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
+
 
 .intro {
   background-color: #2F303A;
   text-align: center;
   padding: 200px 0;
-  margin-bottom: 94px;
-
 }
+
 
 .intro__title {
   color: #FFF;
@@ -155,19 +159,19 @@ a.active {
   letter-spacing: 2.64px;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin: 0;
 }
 
 .intro__btn {
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: #FFF;
   background-color: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition-duration: 0.5s;
 }
 
@@ -180,11 +184,11 @@ a.active {
   background-color: #ffffff;
   overflow: hidden;
   position: relative;
+  padding: 94px 0;
 }
 
 .services__list {
   display: flex;
-  width: 1170px;
   gap: 30px;
 }
 
@@ -210,10 +214,8 @@ a.active {
 
 
 
-
-
-.about__us {
-  margin: 94px 0;
+.about__us{
+  padding-bottom: 94px;
 }
 
 .about__us-list {
@@ -227,8 +229,8 @@ a.active {
 
 
 .our__team {
-  padding: 94px 0;
   background-color: #F5F4FA;
+  padding: 94px 0;  
 }
 
 .our__team-list {
@@ -239,21 +241,26 @@ a.active {
   background-color: #fff;
   text-align: center;
   font-size: 16px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+  padding: 30px 0;
 }
 
 .card-img {
-  padding-bottom: 30px;
+  width: 270px;
 }
 
 .card-name {
   color: #212121;
   font-weight: 500;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .card-position {
   color: #757575;
-  padding-bottom: 30px;
 }
 
 
@@ -263,19 +270,16 @@ a.active {
 
 .footer {
   background-color: #2F303A;
+  padding: 60px 0;
 }
 
-.logo-footer {
-  padding-top: 60px;
-  padding-bottom: 28px;
+.footer__logo {
+  margin-bottom: 28px;
 }
 
-.contact--item {
-  padding-bottom: 10px;
-}
-
-.contact--item:last-child {
-  padding-bottom: 60px;
+.contact--item:not(:last-child)
+{
+  margin-bottom: 10px;
 }
 
 
@@ -285,9 +289,7 @@ a.active {
 
 
 
-.portfolio {
-  padding: 94px 0;
-}
+
 
 .header {
   border-bottom: 1px solid #ECECEC;
@@ -298,6 +300,7 @@ a.active {
   margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
+  padding-top: 94px;
 }
 
 
@@ -306,11 +309,10 @@ a.active {
   padding: 6px 22px;
   border-style: none;
   border-radius: 4px;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  border-style: none;
-  border-radius: 4px;
   color: #212121;
   background-color: #F5F4FA;
   transition-duration: 0.5s;
@@ -325,10 +327,11 @@ a.active {
 
 }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio-list { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px 30px;
+  padding-bottom: 94px;
 }
 
 .portfolio-item {
@@ -336,12 +339,11 @@ a.active {
 }
 
 .portfolio-text {
-  width: 322px;
-  padding: 20px;
+  padding: 20px 24px;
 }
 
 .portfolio-title {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   color: #212121;
   font-size: 18px;
   font-weight: 700;
